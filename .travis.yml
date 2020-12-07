@@ -5,3 +5,9 @@ php:
 
 script:
 - php index.php
+
+deploy:
+  provider: heroku
+  app: ohm-law
+  api_key:
+    secure: $HEROKU_API_KEY
